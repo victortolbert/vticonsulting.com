@@ -1,18 +1,28 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production"
-    },
-    "devDependencies": {
-        "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
-    }
+  "name": "victortolbert.com",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "format": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.0.0",
+    "@iconify-json/logos": "^1.1.38",
+    "@iconify/json": "^2.2.144",
+    "@nuxt/content": "^2.9.0",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@unocss/nuxt": "^0.57.7",
+    "@vueuse/nuxt": "^10.6.1",
+    "eslint": "^8.54.0",
+    "nuxt": "^3.8.2",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  }
 }
