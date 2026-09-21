@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno, presetWebFonts } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetWebFonts, presetWind3 } from 'unocss'
 
 export default defineConfig({
   shortcuts: {
@@ -6,7 +6,7 @@ export default defineConfig({
     'bg-active': ':bg-gray/10',
   },
   presets: [
-    presetUno(),
+    presetWind3(),
     presetIcons(),
     presetAttributify(),
     presetWebFonts({

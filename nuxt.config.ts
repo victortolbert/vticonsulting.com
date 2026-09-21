@@ -22,17 +22,24 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
+  compatibilityDate: '2026-09-20',
+
   content: {
-    highlight: {
-      theme: {
-        default: 'vitesse-light',
-        dark: 'vitesse-dark',
+    build: {
+      markdown: {
+        highlight: {
+          theme: {
+            default: 'vitesse-light',
+            dark: 'vitesse-dark',
+          },
+        },
+        rehypePlugins: {
+          'rehype-external-links': {
+            target: '_blank',
+            rel: ['noopener', 'noreferrer'],
+          },
+        },
       },
-    },
-    markdown: {
-      remarkPlugins: [
-        'remark-external-links',
-      ],
     },
   },
 
