@@ -38,7 +38,7 @@
     "pinia": "^4.0.3",
     "rehype-external-links": "^3.0.0",
     "theme-vitesse": "^1.0.0",
-    "typescript": "^5.9.0",
+    "typescript": "^7.0.0",
     "unocss": "^66.10.5",
     "vue-tsc": "^3.3.11"
   }
