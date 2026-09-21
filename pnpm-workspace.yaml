@@ -1,0 +1,16 @@
+minimumReleaseAgeExcludePrune: true
+minimumReleaseAgeExclude:
+  - '@iconify/json@2.2.531'
+
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  # @babel/core hard-pins semver@^6; pre-dates npm trusted publishing
+  - semver@6.3.1
+
+shellEmulator: true
+
+allowBuilds:
+  '@parcel/watcher': true
+  better-sqlite3: true
+  esbuild: true
+  unrs-resolver: true
